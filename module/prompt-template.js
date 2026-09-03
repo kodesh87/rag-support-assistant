@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const openAIApiKey = process.env.openAIApiKey;
+const openAIApiKey = process.env.OPENAI_API_KEY;
 
 const llm = new ChatOpenAI({ openAIApiKey });
 

@@ -1,5 +1,7 @@
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { createClient } from '@supabase/supabase-js';
 import { SupabaseVectorStore } from 'langchain/vectorstores/supabase';
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai';
@@ -7,8 +9,11 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const DEFAULT_FAQ_PATH = path.join(__dirname, '..', 'data', 'sample-faq.txt');
+
 try {
-    const filePath = '/Users/kodesh87/Developer/nodejs-fe-application/chat-bot/faq.txt';
+    const filePath = process.env.FAQ_FILE_PATH || DEFAULT_FAQ_PATH;
     const text = await fs.readFile(filePath, 'utf-8');
 
     const splitter = new RecursiveCharacterTextSplitter({

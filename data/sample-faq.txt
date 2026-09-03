@@ -1,0 +1,39 @@
+What is Nimbus Cloud?
+
+Nimbus Cloud is a virtual private server (VPS) hosting provider. We offer pre-configured cloud servers so you can deploy websites, bots, game servers, and other applications without managing physical hardware.
+
+What makes Nimbus Cloud good?
+
+Nimbus Cloud runs on NVMe SSD storage across multiple regions, with a control panel that lets you reinstall, snapshot, or resize a server in a couple of clicks. Support is available over live chat and email, and most tickets get a first response within an hour.
+
+How fast is Nimbus Cloud?
+
+Our standard plans run on dedicated CPU cores (not oversubscribed vCPUs), and every server ships with NVMe storage by default, which gives noticeably faster disk I/O than spinning-disk or shared-vCPU competitors.
+
+Which server locations are available?
+
+We currently offer servers in Singapore, Jakarta, Tokyo, and Frankfurt. You can pick the region during checkout, and you can also deploy additional servers in a different region from your existing account.
+
+Can I copy-paste into the console, and how?
+
+Yes. Open your server from the dashboard, click "Console," and use Ctrl+Shift+V (or right-click and choose Paste) to paste text into the in-browser terminal. If you're connecting over SSH instead, copy-paste works the same as any normal terminal on your own machine.
+
+Do you offer a money-back guarantee?
+
+Yes, all new accounts come with a 7-day money-back guarantee. If you're not satisfied within the first 7 days, contact help@nimbuscloud.dev and we'll process a full refund.
+
+How do I upgrade or downgrade my plan?
+
+From the dashboard, go to your server's "Plan" tab and choose a new plan. Upgrades apply immediately after a resize and reboot; downgrades may require freeing up disk space first if the new plan has a smaller disk.
+
+What operating systems do you support?
+
+We support most common Linux distributions (Ubuntu, Debian, AlmaLinux, Rocky Linux) as one-click installs, plus a custom ISO upload option for anything else.
+
+I forgot my server's root password. What do I do?
+
+From the dashboard, open your server and choose "Reset Root Password" under the Settings tab. A new password is generated and emailed to the address on file within a few minutes.
+
+How do I contact support?
+
+Email help@nimbuscloud.dev or use the live chat widget in the dashboard. Include your server ID so the team can look up your account faster.
